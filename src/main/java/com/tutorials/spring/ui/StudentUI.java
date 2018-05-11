@@ -1,6 +1,7 @@
 package com.tutorials.spring.ui;
 
 import com.tutorials.spring.model.Student;
+import com.tutorials.spring.repository.StudentRepository;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.HtmlImport;
 import com.vaadin.flow.component.grid.Grid;
@@ -31,6 +32,7 @@ public class StudentUI extends VerticalLayout {
     private Button deselect = new Button("Deselect All");
     private Button refresh = new Button("Refresh");
     private Grid<Student> grid = new Grid<>(Student.class);
+    private StudentRepository students;
 
     public StudentUI() {
         filterText.setPlaceholder("Filter by lastname.....");
@@ -75,6 +77,11 @@ public class StudentUI extends VerticalLayout {
                             );
                 }
         );
+        listStudents();
+
+    }
+
+    private void listStudents(){
 
     }
 }

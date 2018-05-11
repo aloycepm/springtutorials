@@ -10,7 +10,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
 /**
  *
  * @author Ecyola
@@ -25,6 +24,19 @@ public class Student {
     private String sex;
     private String status;
 
+    public Student() {
+    }
+
+    public Student(Long id) {
+        this.id = id;
+    }
+
+    public Student(String firstName, String lastName, String sex, String status) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sex = sex;
+        this.status = status;
+    }
 
     public void setId(Long id) {
         this.id = id;

@@ -13,6 +13,18 @@ public class ClassRoom {
     private String name;
     private int capacity;
 
+    public ClassRoom() {
+    }
+
+    public ClassRoom(Long id) {
+        this.id = id;
+    }
+
+    public ClassRoom(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+
     public Long getId() {
         return id;
     }
