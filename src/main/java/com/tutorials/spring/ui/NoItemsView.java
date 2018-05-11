@@ -1,4 +1,4 @@
-package com.tutorials.spring;
+package com.tutorials.spring.ui;
 
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.router.Route;
